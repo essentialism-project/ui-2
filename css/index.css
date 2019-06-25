@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e4e4e4;
+  padding: 0 1rem;
+}
+nav a {
+  background-color: #e4e4e4;
+  text-decoration: none;
+}
+.logo {
+  margin: 0 0 0 0.45em;
+  max-height: 50px;
+}
+.logo a {
+  background-color: #e4e4e4;
+}
+.logo,
+.navigation {
+  list-style: none;
+}
+.logo a,
+.navigation a {
+  text-decoration: none;
+  background-color: #e4e4e4;
+}
+.navigation {
+  display: flex;
+}
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: black;
+}
+.navigation a:hover {
+  background-color: black;
+  color: white;
+}
+/** Call to Action section **/
+.cta {
+  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+  color: white;
+  padding: 7rem 6rem;
+}
+.cta-top h1 {
+  padding-bottom: 100px;
+  margin-left: 3%;
+}
+.ctaBtn {
+  background: #00897B;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 2.5%;
+  padding: 6px;
+}
+.main-content {
+  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+}
+.left-content img {
+  max-width: 70%;
+}
