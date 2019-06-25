@@ -112,3 +112,50 @@ h3 {
 .left-content img {
   max-width:70%;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e4e4e4;
+  padding: 0 1rem;
+}
+
+nav a {
+  background-color: #e4e4e4;
+}
+
+.logo {
+  margin: 0 0 0 0.45em;
+  max-height: 50px;
+}
+
+.logo a {
+  background-color: #e4e4e4;
+}
+
+.logo,
+.navigation {
+  list-style: none;
+}
+
+.logo a,
+.navigation a {
+  text-decoration: none;
+  background-color: #e4e4e4;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+  color: black;
+}
+
+.navigation a:hover {
+  background-color: black;
+  color: white;
+}
