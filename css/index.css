@@ -184,20 +184,11 @@ nav a {
   justify-content: center;
   padding: 3rem 0;
 }
-.tabs {
-  text-align: center;
-  border: 1px solid black;
-}
 .tabs .tabs-items {
   height: 300px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
 }
 .tabs .tabs-item {
   display: none;
-}
-.tabs .tabs-item .tabs-item-title {
   font-size: 24px;
   padding-bottom: 10px;
 }
@@ -206,7 +197,7 @@ nav a {
 }
 .tabs .tabs-links {
   display: flex;
-  background-color: #931d25;
+  background: #D0D0D0;
 }
 .tabs .tabs-link {
   padding: 20px 25px;
