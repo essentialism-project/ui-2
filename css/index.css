@@ -188,18 +188,9 @@ nav a {
   font-size: 24px;
   line-height: 30px;
 }
-.main-content {
-  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-}
-.left-content img {
-  max-width: 70%;
-}
-.bottom-cta {
-  display: inline-block;
-}
-.form {
-  background: #ffffff;
-  float: right;
+.smaller {
+  font-size: 8px;
+  line-height: 9px;
 }
 /*********** Testimonials Section *********/
 .testimonials {
@@ -241,6 +232,27 @@ inverse-testimonials .text-content {
 }
 .fblock {
   border: 1px solid black;
+}
+/** retry cta **/
+/* larger screen */
+@media screen and (min-width: 30rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+  }
+  article {
+    flex: 75%;
+  }
+  aside {
+    flex: 25%;
+    background-color: white;
+    color: black;
+  }
+}
+img .cta-img {
+  width: 75%;
 }
 .tabs {
   width: 80%;

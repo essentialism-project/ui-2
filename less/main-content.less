@@ -22,21 +22,18 @@
 
 }
 
-.main-content {
-	background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+
+.right-content button {
+
 }
 
-.left-content img {
-	max-width: 70%;
+.smaller {
+    font-size: 8px;
+    line-height: 9px;
 }
 
-.bottom-cta {
-display: inline-block;
-}
-.form {
-    background: #ffffff;
-    float: right;
-}
+
+
 
 /*********** Testimonials Section *********/
 
@@ -86,6 +83,34 @@ display: inline-block;
  border: 1px solid black;
  }
 
+/** retry cta **/
+
+
+
+/* larger screen */
+@media screen and (min-width: 30rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+  }
+
+
+  article {
+    flex: 75%;
+  }
+
+  aside {
+    flex: 25%;
+    background-color: white;
+    color: black;
+  }
+}
+
+img .cta-img {
+    width: 75%
+}
 
 
 
