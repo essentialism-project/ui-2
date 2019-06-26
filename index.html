@@ -8,15 +8,28 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
+<!--<nav>-->
+<!--    <a href="#"><img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo">Essentialism</a>-->
+<!--    <ul class="navigation">-->
+<!--        <li><a href="#">Testimonials</a></li>-->
+<!--        <li><a href="#">Pricing</a></li>-->
+<!--        <li><a href="#">About</a></li>-->
+<!--        <li><a href="#">Sign Up</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+
 <nav>
-    <a href="#"><img class="logo" src="img/Logo%20-%20Essentialism.png">Essentialism</a>
-    <ul class="navigation">
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sign Up</a></li>
-    </ul>
+    <nav class="leftnav">
+        <a href="#"><img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo">Essentialism</a>
+    </nav>
+    <nav class="rightnav">
+        <a href="#" class="rightnav">Testimonials</a>
+        <a href="#" class="rightnav">Pricing</a>
+        <a href="#" class="rightnav">About</a>
+        <a href="#" class="rightnav">Sign Up</a>
+    </nav>
 </nav>
+
 <body>
 <section class="cta">
     <div class="top-cta"><h1>Find your life meaning</h1>
@@ -40,49 +53,43 @@
 </div>
 </section>
 
-    <section class="about-tabs">
-        <!-- TABS COMPONENT -->
-        <div class="tabs">
-            <div class="tabs">
-                <span class="title">What is Essentialism?</span>
-                <div data-tab="growth" class="tab active-tab">Growth</div>
-                <div data-tab="organize" class="tab">Organize</div>
-                <div data-tab="matters" class="tab">Do what matters</div>
-                <div data-tab="answers" class="tab">Answers</div>
-            </div>
-
-            <!-- TAB CONTENTS -->
-            <div class="card" data-tab="growth">
-                <div class="headline">Celestine joys facilitates most tantras. </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/400x300"/>
-                </div>
-                <p class="description">You have to travel, and visualize manifestation by your rising. Confused by energies, the karma is. Be outer. Confucius says: confused by acceptances, the scholar is. Our inner happiness for love is to desire others silently. Who can know the chaos and ascension of a scholar if he has the crystal happiness of the thing.</p>
-            </div>
-            <div class="card" data-tab="organize">
-                <div class="headline">Celestine joys facilitates most tantras. </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/400x300"/>
-                </div>
-                <p class="description">You have to travel, and visualize manifestation by your rising. Confused by energies, the karma is. Be outer. Confucius says: confused by acceptances, the scholar is. Our inner happiness for love is to desire others silently. Who can know the chaos and ascension of a scholar if he has the crystal happiness of the thing.</p>
-            </div>
-            <div class="card" data-tab="matters">
-                <div class="headline">Celestine joys facilitates most tantras. </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/400x300"/>
-                </div>
-                <p class="description">You have to travel, and visualize manifestation by your rising. Confused by energies, the karma is. Be outer. Confucius says: confused by acceptances, the scholar is. Our inner happiness for love is to desire others silently. Who can know the chaos and ascension of a scholar if he has the crystal happiness of the thing.</p>
-            </div>
-            <div class="card" data-tab="answers">
-                <div class="headline">Celestine joys facilitates most tantras. </div>
-                <div class="screenshot">
-                    <img src="https://via.placeholder.com/400x300"/>
-                </div>
-                <p class="description">You have to travel, and visualize manifestation by your rising. Confused by energies, the karma is. Be outer. Confucius says: confused by acceptances, the scholar is. Our inner happiness for love is to desire others silently. Who can know the chaos and ascension of a scholar if he has the crystal happiness of the thing.</p>
-            </div>
-
+<section class="about-tabs">
+    <!-- TABS COMPONENT -->
+    <div class="tabs">
+        <div class="tabs-links">
+            <div class="tabs-link tabs-link-selected" data-tab="growth">Growth</div>
+            <div class="tabs-link" data-tab="organize">Organize</div>
+            <div class="tabs-link" data-tab="matters">Do what matters</div>
+            <div class="tabs-link" data-tab="answers">Answers</div>
         </div>
-    </section>
+
+        <!-- TAB CONTENTS -->
+        <div class="tabs-item tabs-item-selected" data-tab="growth">
+            <div class="tabs-item-description">
+                <img src="img/undraw_going_up_ttm5.png">
+                <p>joys facilitates most tantras. </p>
+            </div>
+        </div>
+        <div class="tabs-item tabs-item" data-tab="organize">
+            <div class="tabs-item-description">
+                <img src="img/undraw_task_31wc.png">
+                <p>joys facilitates most tantras. </p>
+            </div>
+        </div>
+        <div class="tabs-item tabs-item" data-tab="matters">
+            <div class="tabs-item-description">
+                <img src="img/undraw_hang_out_h9ud.png">
+                <p>joys facilitates most tantras. </p>
+            </div>
+        </div>
+        <div class="tabs-item tabs-item" data-tab="answers">
+            <div class="tabs-item-description">
+                <img src="img/undraw_questions_75e0.png">
+                <p>joys facilitates most tantras. </p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <section class="testimonials">
         <div class="quotes">
@@ -113,5 +120,6 @@
     <footer>
 
     </footer>
+    <script src="js/tabs.js"></script>
 </body>
 </html>

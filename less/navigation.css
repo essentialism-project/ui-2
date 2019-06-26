@@ -1,40 +1,22 @@
 nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  /* aligns links vertically */
+  top: 0;
+  left: 0;
   background-color: #e4e4e4;
-  padding: 0 1rem;
-}
-nav a {
-  background-color: #e4e4e4;
-  text-decoration: none;
 }
 .logo {
-  margin: 0 0 0 0.45em;
-  max-height: 50px;
+  max-height: 40px;
 }
-.logo a {
-  background-color: #e4e4e4;
+.leftnav {
+  flex-grow: 1;
+  align-items: center;
 }
-.logo,
-.navigation {
-  list-style: none;
-}
-.logo a,
-.navigation a {
-  text-decoration: none;
-  background-color: #e4e4e4;
-}
-.navigation {
-  display: flex;
-}
-.navigation a {
-  display: block;
+nav a {
   padding: 1em;
+  text-decoration: none;
   color: black;
-}
-.navigation a:hover {
-  background-color: black;
-  color: white;
 }
 /*# sourceMappingURL=navigation.css.map */

@@ -1,48 +1,26 @@
 nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #e4e4e4;
-	padding: 0 1rem;
-}
-
-nav a {
-	background-color: #e4e4e4;
-	text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* aligns links vertically */
+  top: 0;
+  left: 0;
+  background-color: #e4e4e4;
 }
 
 .logo {
-	margin: 0 0 0 0.45em;
-	max-height: 50px;
+max-height: 40px;
 }
 
-.logo a {
-	background-color: #e4e4e4;
+.leftnav {
+  flex-grow: 1;
+  align-items: center;
 }
 
-.logo,
-.navigation {
-	list-style: none;
+nav a {
+  padding: 1em;
+  text-decoration: none;
+  color: black;
 }
 
-.logo a,
-.navigation a {
-	text-decoration: none;
-	background-color: #e4e4e4;
-}
 
-.navigation {
-	display: flex;
-}
-
-.navigation a {
-	display: block;
-	padding: 1em;
-	color: black;
-}
-
-.navigation a:hover {
-	background-color: black;
-	color: white;
-}
 
