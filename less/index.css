@@ -1,52 +1,3 @@
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e4e4e4;
-  padding: 0 1rem;
-}
-nav a {
-  background-color: #e4e4e4;
-  text-decoration: none;
-}
-.logo {
-  margin: 0 0 0 0.45em;
-  max-height: 50px;
-}
-.logo a {
-  background-color: #e4e4e4;
-}
-.logo,
-.navigation {
-  list-style: none;
-}
-.logo a,
-.navigation a {
-  text-decoration: none;
-  background-color: #e4e4e4;
-}
-.navigation {
-  display: flex;
-}
-.navigation a {
-  display: block;
-  padding: 1em;
-  color: black;
-}
-.navigation a:hover {
-  background-color: black;
-  color: white;
-}
-/** Call to Action section **/
-.cta {
-  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-  color: white;
-  padding: 7rem 6rem;
-}
-.cta-top h1 {
-  padding-bottom: 100px;
-  margin-left: 3%;
-}
 .ctaBtn {
   background: #00897B;
   border: none;
@@ -54,13 +5,310 @@ nav a {
   color: white;
   font-size: 24px;
   line-height: 30px;
-  margin-top: 2.5%;
-  padding: 6px;
+  width: 25%;
 }
-.main-content {
+/*
+   CSS default reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/** begin styles.css **/
+* {
+  font-family: 'Roboto', sans-serif;
+}
+/** Text Header Styles **/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-size: 63px;
+  line-height: 80px;
+}
+h2 {
+  font-size: 52px;
+  line-height: 80px;
+}
+h3 {
+  font-size: 35px;
+  line-height: 64px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: #e4e4e4;
+}
+.logo {
+  max-height: 40px;
+}
+.leftnav {
+  flex-grow: 1;
+  align-items: center;
+  align-content: center;
+}
+nav a {
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+}
+.tabs {
+  width: 80%;
+  text-align: center;
+  border: 1px solid black;
+}
+.about-tabs {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.tabs {
+  width: 80%;
+  text-align: center;
+  border: 1px solid black;
+}
+.tabs .tabs-items {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  margin: auto;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 75%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+  display: block;
+}
+.tabs .tabs-links {
+  display: flex;
+  background-color: #931d25;
+  border-right: 1px solid black;
+}
+.tabs .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  color: black;
+  cursor: pointer;
+  width: 25%;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border-bottom: none;
+  background-color: #ffffff;
+  color: black;
+}
+/** Call to Action section **/
+.cta {
   background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+  color: white;
+  padding: 10%;
 }
-.left-content img {
-  max-width: 70%;
+.smaller {
+  font-size: 8px;
+  line-height: 9px;
+}
+/*********** Testimonials Section *********/
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
+}
+.quote {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quote .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.quote .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.quote .img-content img {
+  border-radius: 50%;
+}
+inverse-testimonials {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+inverse-testimonials .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+/************ Features Grid ************/
+.features {
+  display: flex;
+  margin: auto;
+  justifycontent: space-between;
+}
+.fblock {
+  border: 1px solid black;
+}
+/** retry cta **/
+/* larger screen */
+@media screen and (min-width: 30rem) {
+  body {
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+  }
+  article {
+    flex: 75%;
+  }
+  aside {
+    flex: 25%;
+    background-color: white;
+    color: black;
+  }
+}
+img .cta-img {
+  width: 75%;
 }
 /*# sourceMappingURL=index.css.map */

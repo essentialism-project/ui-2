@@ -24,139 +24,129 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+    display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 blockquote, q {
-  quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /** begin styles.css **/
 * {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 
 /** Text Header Styles **/
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-font-size: 63px;
-line-height: 80px;
+    font-size: 63px;
+    line-height: 80px;
 }
 
 h2 {
-  font-size: 52px;
-  line-height: 80px;
+    font-size: 52px;
+    line-height: 80px;
 }
 
 h3 {
-  font-size: 35px;
-  line-height: 64px;
+    font-size: 35px;
+    line-height: 64px;
 }
 
 /** Call to Action section **/
 .cta {
-  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-  color: white;
-  padding: 7rem 6rem;
+    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+    color: white;
+    padding: 7rem 6rem;
 
- }
+}
 
 .cta-top h1 {
-  padding-bottom: 100px;
-  margin-left: 3%;
-}
-.ctaBtn {
-  background: #00897B;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  font-size: 24px;
-  line-height: 30px;
-  margin-top: 2.5%;
-  padding: 6px;
+    padding-bottom: 100px;
+    margin-left: 3%;
 }
 
 .main-content {
-  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
 }
 
 .left-content img {
-  max-width:70%;
+    max-width:70%;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e4e4e4;
-  padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e4e4e4;
+    padding: 0 1rem;
 }
 
 nav a {
-  background-color: #e4e4e4;
-  text-decoration: none;
+    background-color: #e4e4e4;
+    text-decoration: none;
 }
 
 .logo {
-  margin: 0 0 0 0.45em;
-  max-height: 50px;
+    margin: 0 0 0 0.45em;
+    max-height: 50px;
 }
 
 .logo a {
-  background-color: #e4e4e4;
+    background-color: #e4e4e4;
 }
 
 .logo,
 .navigation {
-  list-style: none;
+    list-style: none;
 }
 
 .logo a,
 .navigation a {
-  text-decoration: none;
-  background-color: #e4e4e4;
+    text-decoration: none;
+    background-color: #e4e4e4;
 }
 
 .navigation {
-  display: flex;
+    display: flex;
 }
 
 .navigation a {
-  display: block;
-  padding: 1em;
-  color: black;
+    display: block;
+    padding: 1em;
+    color: black;
 }
 
 .navigation a:hover {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
