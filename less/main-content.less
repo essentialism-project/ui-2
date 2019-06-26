@@ -39,27 +39,30 @@ display: inline-block;
 }
 
 /*********** Testimonials Section *********/
+
 .testimonials {
-padding: 5% 20%;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
     background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
 }
-    .quote {
+
+   .quote {
    margin: 30px 0;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
 
-
  }
-    .quote .text-content {
+   .quote .text-content {
    width: 48%;
    padding-right: 1%;
  }
-    .quote .img-content {
+   .quote .img-content {
    width: 48%;
    padding-left: 1%;
  }
-    .quote .img-content img {
+   .quote .img-content img {
    border-radius: 50%;
  }
    inverse-testimonials {
@@ -70,11 +73,22 @@ padding: 5% 20%;
    padding-left: 1%;
    padding-right: 0;
  }
-   inverse-testimonials .img-content {
-   padding-right: 1%;
-   padding-left: 0;
+
+
+ /************ Features Grid ************/
+ .features {
+ display: flex;
+ margin: auto;
+ justify content: space-between;
  }
 
- .bottom-content {
-
+ .fblock {
+ border: 1px solid black;
  }
+
+
+
+
+
+
+

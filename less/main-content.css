@@ -27,7 +27,9 @@
 }
 /*********** Testimonials Section *********/
 .testimonials {
-  padding: 5% 20%;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
   background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
 }
 .quote {
@@ -55,8 +57,13 @@ inverse-testimonials .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-inverse-testimonials .img-content {
-  padding-right: 1%;
-  padding-left: 0;
+/************ Features Grid ************/
+.features {
+  display: flex;
+  margin: auto;
+  justifycontent: space-between;
+}
+.fblock {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=main-content.css.map */
