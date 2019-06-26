@@ -1,6 +1,5 @@
 
 .tabs {
-  width: 80%;
  text-align: center;
     border: 1px solid black;
 
@@ -10,27 +9,24 @@
     display: flex;
     margin: auto;
     justify-content: center;
+    padding: 3rem 0;
 }
 .tabs {
-  width: 80%;
  text-align: center;
-    border: 1px solid black;
+ border: 1px solid black;
 }
 .tabs .tabs-items {
-  width: 80%;
   height: 300px;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-    margin: auto;
+  margin: auto;
 }
 .tabs .tabs-item {
   display: none;
-  width: 75%;
+
 }
 .tabs .tabs-item .tabs-item-title {
   font-size: 24px;
-  font-weight: bold;
   padding-bottom: 10px;
 }
 .tabs .tabs-item-selected {
@@ -39,18 +35,23 @@
 .tabs .tabs-links {
   display: flex;
   background-color: #931d25;
-    border-right: 1px solid black;
+
 }
 .tabs .tabs-link {
   padding: 20px 25px;
-  font-size: 24px;
+
   background-color: white;
   border-right: 1px solid black;
     border-bottom: 1px solid black;
   color: black;
   cursor: pointer;
-    width: 25%;
+    width: auto;
 }
+
+.tabs-link:last-child {
+    border-right: none;
+}
+
 .tabs .tabs-link:hover {
 
 }
