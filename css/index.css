@@ -324,6 +324,7 @@ aside fieldset {
 }
 .avatar {
   border-radius: 50%;
+  padding-right: 2rem;
 }
 /************ Features ************/
 .features {
