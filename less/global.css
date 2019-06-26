@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: auto;
+}
 /** Text Header Styles **/
 h1,
 h2,
@@ -18,5 +24,9 @@ h2 {
 h3 {
   font-size: 35px;
   line-height: 64px;
+}
+button {
+  background: #00897B;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=global.css.map */
