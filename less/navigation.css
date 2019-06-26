@@ -8,6 +8,7 @@ nav {
 }
 .logo {
   max-height: 40px;
+  margin-left: 2rem;
 }
 .leftnav {
   flex-grow: 1;

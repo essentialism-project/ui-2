@@ -163,6 +163,10 @@ button {
   background: #00897B;
   border-radius: 10px;
 }
+p {
+  font-size: 24px;
+  line-height: 1.4;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -173,6 +177,7 @@ nav {
 }
 .logo {
   max-height: 40px;
+  margin-left: 2rem;
 }
 .leftnav {
   flex-grow: 1;
@@ -292,7 +297,7 @@ aside fieldset {
   margin-top: 12rem;
   color: black;
 }
-/*********** Testimonials Section *********/
+/*********** Testimonials *********/
 .testimonials {
   background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
 }
@@ -310,12 +315,21 @@ aside fieldset {
 .avatar {
   border-radius: 50%;
 }
-/************ Features Grid ************/
+/************ Features ************/
 .features {
   display: flex;
   margin: auto;
-  justifycontent: space-between;
+  justifycontent: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 3rem;
+}
+.block {
+  align-items: center;
+  align-content: center;
+  padding: 1rem;
+  border: 1px solid black;
 }
 .fblock {
-  border: 1px solid black;
+  padding: 2rem;
 }
