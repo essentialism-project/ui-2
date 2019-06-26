@@ -29,7 +29,9 @@
 
 .tabs .tabs-links {
   display: flex;
+  justify-content: space-evenly;
   background: #D0D0D0;
+  width: 100%;
 
 }
 .tabs .tabs-link {
@@ -39,7 +41,7 @@
   border-bottom: 1px solid black;
   color: black;
   cursor: pointer;
-    width: auto;
+    width: 25%;
 }
 
 .tabs-link:last-child {
@@ -58,3 +60,22 @@
 .tabs .tabs-link-selected:hover {
 
 }
+
+.tabs-item-description {
+display: flex;
+margin: auto;
+padding: 4rem;
+align-items: center;
+}
+
+.tabs-item-description img {
+    padding-right: 3rem;
+}
+
+.tabs-item-description p {
+    width: 45%;
+    font-size: 24px;
+    line-height: 2;
+    text-align: left;
+}
+
