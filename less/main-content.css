@@ -1,0 +1,90 @@
+/** Call to Action section **/
+.cta {
+  background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+  color: white;
+  padding: 10%;
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.button {
+  background: #00897B;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  padding-below: 2rem;
+}
+.form-btn {
+  background: #00897B;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  padding-below: 2rem;
+}
+.cta .button {
+  width: 33%;
+}
+.smaller {
+  font-size: 8px;
+  line-height: 9px;
+}
+.cta-img {
+  width: 100%;
+}
+/* larger screen */
+aside fieldset {
+  background: #FFFFFF;
+  border: 5px solid #C4C4C4;
+  border-radius: 15px;
+  padding: 4rem 2rem;
+  margin-top: 12rem;
+  color: black;
+}
+/*********** Testimonials Section *********/
+.testimonials {
+  display: flex;
+  padding: 5%;
+  background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
+  margin: auto;
+}
+.quote {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.quote .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.quote .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.quote .img-content img {
+  border-radius: 50%;
+}
+inverse-testimonials {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+inverse-testimonials .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+/************ Features Grid ************/
+.features {
+  display: flex;
+  margin: auto;
+  justifycontent: space-between;
+}
+.fblock {
+  border: 1px solid black;
+}
+/*# sourceMappingURL=main-content.css.map */

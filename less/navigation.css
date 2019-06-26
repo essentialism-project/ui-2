@@ -1,0 +1,22 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: #e4e4e4;
+}
+.logo {
+  max-height: 40px;
+}
+.leftnav {
+  flex-grow: 1;
+  align-items: center;
+  align-content: center;
+}
+nav a {
+  padding: 1em;
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=navigation.css.map */

@@ -5,52 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Essentialism - Landing Page</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
 <nav>
-    <a href="#"><img class="logo" src="https://via.placeholder.com/50">Essentialism</a>
-    <ul class="navigation">
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Sign Up</a></li>
-    </ul>
+    <nav class="leftnav">
+        <a href="#"><img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"> Essentialism</a>
+    </nav>
+    <nav class="rightnav">
+        <a href="#" class="rightnav">Testimonials</a>
+        <a href="#" class="rightnav">Pricing</a>
+        <a href="#" class="rightnav">About</a>
+        <a href="#" class="rightnav">Sign Up</a>
+    </nav>
 </nav>
-<body>
-<section class="header">
-    <h1>Find your life meaning</h1>
-    <h3>Focus on the Essentials</h3>
-    <button>Find your values</button>
 
+<body>
+<section class="cta">
+    <article>
+        <h1>Find your life meaning</h1>
+        <h2>Focus on the Essentials</h2>
+        <div class="button">Find your values</div>
+        <img class="cta-img" src="img/undraw_contemplating_8t0x.svg">
+    </article>
+
+    <aside>
+        <form>
+            <fieldset>
+            <div class="form-group">
+                <label for="user">Username</label><br>
+                <input type="text" name="username" id="user">
+            </div><br>
+            <div class="form-group">
+                <label for="pass">Password</label><br>
+                <input type="text" name="password" id="pass">
+                <p class="smaller">forgot your password?</p>
+
+            </div><br><br>
+            <input class="form-btn" type="submit" value="Sign In">
+        </fieldset>
+        </form>
+    </aside>
 </section>
-    <section class="main-content">
-        <div class="left-content"></div>
-        <div class="right-content">
-            <form>
-                <div>
-                    <label for="userName">Username</label>
-                    <input type="text" id="userName" name="userName">
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="text" id="password" name="password">
-                </div>
-                <div><input type="submit" value="Sign Up">
-                    <input type="submit" value="Sign In"></div>
-            </form>
+
+
+
+<section class="about-tabs">
+    <!-- TABS COMPONENT -->
+    <div class="tabs">
+        <div class="tabs-links">
+            <div class="tabs-link tabs-link-selected" data-tab="growth">Growth</div>
+            <div class="tabs-link" data-tab="organize">Organize</div>
+            <div class="tabs-link" data-tab="matters">Do
+            what
+            matters</div>
+            <div class="tabs-link" data-tab="answers">Answers</div>
         </div>
 
-    </section>
+        <!-- TAB CONTENTS -->
+        <div class="tabs-item tabs-item-selected" data-tab="growth">
+            <div class="tabs-item-description">
+                <img src="img/undraw_going_up_ttm5.png">
+                <p>Growth is more than doing more. <br> Essentialism will help you grow as a person. Doing more of what is important to you and less of what is wasting your time.<br><br>Do better. Be better</p>
+            </div>
+        </div>
+        <div class="tabs-item tabs-item" data-tab="organize">
+            <div class="tabs-item-description">
+                <img src="img/undraw_task_31wc.png">
+                <p>Organizing your life should be a top priority. Essentialism will help you create a system to keep all of your activities in check and even help you get rid of those things that are wasting your time.</p>
+            </div>
+        </div>
+        <div class="tabs-item tabs-item" data-tab="matters">
+            <div class="tabs-item-description">
+                <img src="img/undraw_hang_out_h9ud.png">
+                <p>Stop wasting time with things that don't matter. Focus on the things that bring you happiness and joy. Spend your time the way you want to. Don't be controlled by all the noise in your life.</p>
+            </div>
+        </div>
+        <div class="tabs-item tabs-item" data-tab="answers">
+            <div class="tabs-item-description">
+                <img src="img/undraw_questions_75e0.png">
+                <p>Find the answers you have been searching for with essentialism. What is important to me? How can I stop doing all these things? Once you identify y our values, it's so much easier to focus on what is really important in your life.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="features">
 
-    </section>
+<section class="testimonials">
+    <div class="quote">
+        <div class="text-content">
+            <div class="img-content">
+                <img src="img/6by7k29n.png" alt="Let's go on an adventure!">
+            </div>
+            <p>Essentialism has been a game changer in my life. I was able to revive my relationships and still have
+                time for myself.</p>
+
+        </div>
+
+    </div>
+    <div class="quote inverse-quote">
+
+        <div class="text-content">
+            <p>I was constantly stressed. I had too much on my plate. Essentialism showed me what things I didn't need
+                to be doing. It's a life saver!</p>
+            <div class="img-content">
+                <img src="img/p1agylup.png" class="img-fluid rounded" alt="Lets have fun!">
+            </div>
+
+
+</section>
 
 
 
-    <footer>
+<section class="features">
+    <div class="fblock">
+        <img src="https://via.placeholder.com/300x200" alt="Sample photo">
+        <div class="text">
+            <p>If you die or disappear with a calm hypnosis, issue follows you.</p>
+        </div>
+    </div>
+    <article>
+        <img src="https://via.placeholder.com/300x200" alt="Sample photo">
+        <div class="text">
+            <p>If you die or disappear with a calm hypnosis, issue follows you.</p>
+        </div>
+    </article>
+    <article>
+        <img src="https://via.placeholder.com/300x200" alt="Sample photo">
+        <div class="text">
+            <p>If you die or disappear with a calm hypnosis, issue follows you.</p>
+        </div>
+    </article>
 
-    </footer>
+</section>
+<script src="js/tabs.js"></script>
 </body>
 </html>
