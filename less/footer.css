@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  padding: 5rem;
+  border-top: 1px solid #B8DEDA;
+  margin-top: 2rem;
+}
+.footCol {
+  padding: 0 2rem;
+}
+/*# sourceMappingURL=footer.css.map */

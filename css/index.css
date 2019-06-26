@@ -250,6 +250,15 @@ nav a {
   line-height: 2;
   text-align: left;
 }
+footer {
+  display: flex;
+  padding: 5rem;
+  border-top: 1px solid #B8DEDA;
+  margin-top: 2rem;
+}
+.footCol {
+  padding: 0 2rem;
+}
 /** Call to Action section **/
 .cta {
   background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
@@ -328,9 +337,9 @@ aside fieldset {
 .block {
   align-items: center;
   align-content: center;
-  padding: 1rem;
+  padding: 1.7rem;
   border: 1px solid black;
 }
 .fblock {
-  padding: 2rem;
+  padding: 1rem;
 }

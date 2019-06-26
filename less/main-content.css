@@ -76,10 +76,10 @@ aside fieldset {
 .block {
   align-items: center;
   align-content: center;
-  padding: 1rem;
+  padding: 1.7rem;
   border: 1px solid black;
 }
 .fblock {
-  padding: 2rem;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main-content.css.map */
