@@ -333,8 +333,6 @@ aside fieldset {
     color: black;
     cursor: pointer;
     width: 25%;
-
-
 }
 
 .tabs-link:last-child {
@@ -369,43 +367,43 @@ aside fieldset {
 
 @media (max-width: 500px) {
     .about-tabs {
-        display: flex;
-        margin: auto;
-        justify-content: center;
         padding: 0;
-        border: 1px solid #C4C4C4;
-    }
 
-    .tabs {
+
+    }
+    .tabs-links {
+        width:100%;
+    }
+    .tabs-link {
         text-align: center;
-        border: 1px solid #C4C4C4;
-        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+        background: white;
+    }
+    .tabs .tabs-links {
+        width: 90%;
+
     }
 
     .tabs .tabs-item {
-        display: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-bottom: 10px;
-
     }
-
-
 
     .tabs-item-description {
         display: flex;
         margin: auto;
-        width: 90%;
-
-
+        flex-direction: column;
     }
 
     .tabs-item-description img {
-
+        height: 25%;
+        padding: 0 1rem;
     }
 
     .tabs-item-description p {
-
+        width: 90%;
+        padding-top: 2rem;
     }
+
 }
 
 
@@ -416,7 +414,6 @@ aside fieldset {
 .testimonials {
     background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
     padding-bottom: 5rem;
-
     flex-wrap: wrap;
 }
 
@@ -429,10 +426,6 @@ aside fieldset {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-
-
-
 
 .quote p {
     width: 40%;
@@ -449,12 +442,11 @@ aside fieldset {
 
 @media (max-width: 500px) {
     .top-quote {
-
         flex-direction: column;
         flex-wrap: wrap;
     }
 
-    .bottom-quote {
+     .bottom-quote {
         padding: 1rem;
         margin-top: 2rem;
         display: flex;
@@ -464,7 +456,7 @@ aside fieldset {
     .quote p {
         width: 80%;
         line-height: 1.4;
-        padding-top: 1rem;
+        padding: 1rem 1rem 0 0;
     }
 }
 
