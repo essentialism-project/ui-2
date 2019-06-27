@@ -1,3 +1,4 @@
+/** gooney**/
 /** Call to Action section **/
 .cta {
   background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
@@ -15,7 +16,6 @@
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding-below: 2rem;
 }
 .form-btn {
   background: #00897B;
@@ -55,21 +55,23 @@ aside fieldset {
   margin: auto;
   justify-content: center;
   padding-top: 5rem;
+  align-items: center;
 }
 .quote p {
-  width: 50%;
+  width: 40%;
   line-height: 1.4;
-  font-size: 24px;
+}
+.quote.top-quote p {
+  padding-left: 2rem;
 }
 .avatar {
   border-radius: 50%;
-  padding-right: 2rem;
 }
 /************ Features ************/
 .features {
   display: flex;
   margin: auto;
-  justifycontent: space-around;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   padding: 3rem;

@@ -1,29 +1,99 @@
-/*  Essentialism App Marketing Page
-    Build Week 1:  User Interface
-    Lisa Taylor
-    Lambda School
- */
-
+.btn {
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #D0D0D0;
+    color: #FFFFFF;
+}
 /*
    CSS default reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -32,21 +102,34 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
 body {
     line-height: 1;
 }
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
@@ -54,99 +137,256 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 /** begin styles.css **/
 * {
     font-family: 'Roboto', sans-serif;
 }
-
-
-
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 75rem;
+    margin: auto;
+}
 /** Text Header Styles **/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto', sans-serif;
 }
-
 h1 {
     font-size: 63px;
     line-height: 80px;
 }
-
 h2 {
     font-size: 52px;
     line-height: 80px;
 }
-
 h3 {
     font-size: 35px;
     line-height: 64px;
 }
-
+button {
+    background: #00897B;
+    border-radius: 10px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #e4e4e4;
+}
+.logo {
+    max-height: 40px;
+    margin-left: 2rem;
+}
+.leftnav {
+    flex-grow: 1;
+    align-items: center;
+    align-content: center;
+}
+nav a {
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+}
+.tabs {
+    text-align: center;
+    border: 1px solid black;
+}
+.about-tabs {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 5rem;
+    border: 1px solid black;
+}
+.tabs .tabs-items {
+    height: 300px;
+}
+.tabs .tabs-item {
+    display: none;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.tabs .tabs-item-selected {
+    display: block;
+}
+.tabs .tabs-links {
+    display: flex;
+    justify-content: space-evenly;
+    background: #D0D0D0;
+    width: 100%;
+}
+.tabs .tabs-link {
+    padding: 20px 25px;
+    background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+    cursor: pointer;
+    width: 25%;
+}
+.tabs-link:last-child {
+    border-right: none;
+}
+.tabs .tabs-link-selected {
+    z-index: 2;
+    border-bottom: none;
+    background-color: #ffffff;
+    color: black;
+    background: white;
+}
+.tabs-item-description {
+    display: flex;
+    margin: auto;
+    padding: 4rem;
+    align-items: center;
+}
+.tabs-item-description img {
+    padding-right: 3rem;
+}
+.tabs-item-description p {
+    width: 45%;
+    font-size: 24px;
+    line-height: 2;
+    text-align: left;
+}
+footer {
+    display: flex;
+    padding: 5rem;
+    border-top: 1px solid #B8DEDA;
+    margin-top: 2rem;
+}
+.footCol {
+    padding: 0 2rem;
+}
 /** Call to Action section **/
 .cta {
     background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
     color: white;
-    padding: 7rem 6rem;
-
-}
-
-.cta-top h1 {
-    padding-bottom: 100px;
-    margin-left: 3%;
-}
-
-.main-content {
-    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-}
-
-.left-content img {
-    max-width:70%;
-}
-
-nav {
+    padding: 10%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e4e4e4;
-    padding: 0 1rem;
+    margin: auto;
+    width: 80%;
 }
-
-nav a {
-    background-color: #e4e4e4;
-    text-decoration: none;
+.button {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
 }
-
-.logo {
-    margin: 0 0 0 0.45em;
-    max-height: 50px;
+.form-btn {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    padding-below: 2rem;
 }
-
-.logo a {
-    background-color: #e4e4e4;
+.cta .button {
+    width: 33%;
 }
-
-.logo,
-.navigation {
-    list-style: none;
+.smaller {
+    font-size: 8px;
+    line-height: 9px;
 }
-
-.logo a,
-.navigation a {
-    text-decoration: none;
-    background-color: #e4e4e4;
+.cta-img {
+    width: 100%;
 }
-
-.navigation {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
-    padding: 1em;
+/* larger screen */
+aside fieldset {
+    background: #FFFFFF;
+    border: 5px solid #C4C4C4;
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    margin-top: 12rem;
     color: black;
 }
-
-.navigation a:hover {
-    background-color: black;
-    color: white;
+/*********** Testimonials *********/
+.testimonials {
+    background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
+    padding-bottom: 5rem;
 }
+.quote {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    align-items: center;
+}
+.quote p {
+    width: 40%;
+    line-height: 1.4;
+}
+
+.quote.top-quote p {
+    padding-left: 2rem;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+/************ Features ************/
+.features {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.block {
+    align-items: center;
+    align-content: center;
+    padding: 1.7rem;
+    border: 1px solid black;
+}
+.fblock {
+    padding: 1rem;
+}
+.team {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    max-width: 75rem;
+}
+.member {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+.member img {
+    max-width: 100%;
+}
+.member .text {
+    padding: 0 20px 20px;
+}
+.aboutBtn.fab.fa-github {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+}
+/*# sourceMappingURL=index.css.map */

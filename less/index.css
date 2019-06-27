@@ -144,7 +144,7 @@ table {
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 75rem;
   margin: auto;
 }
 /** Text Header Styles **/
@@ -168,21 +168,12 @@ h3 {
   font-size: 35px;
   line-height: 64px;
 }
-h4 {
-  font-size: 18px;
-  line-height: 2;
-}
-h6 {
-  font-size: 14px;
-  font-style: italic;
-  line-height: 1.8;
-}
 button {
   background: #00897B;
   border-radius: 10px;
 }
 p {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.4;
 }
 nav {
@@ -277,6 +268,7 @@ footer {
 .footCol {
   padding: 0 2rem;
 }
+/** gooney**/
 /** Call to Action section **/
 .cta {
   background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
@@ -294,7 +286,6 @@ footer {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding-bottom: 2rem;
 }
 .form-btn {
   background: #00897B;
@@ -304,7 +295,7 @@ footer {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding-bottom: 2rem;
+  padding-below: 2rem;
 }
 .cta .button {
   width: 33%;
@@ -334,15 +325,17 @@ aside fieldset {
   margin: auto;
   justify-content: center;
   padding-top: 5rem;
+  align-items: center;
 }
 .quote p {
-  width: 50%;
+  width: 40%;
   line-height: 1.4;
-  font-size: 24px;
+}
+.quote.top-quote p {
+  padding-left: 2rem;
 }
 .avatar {
   border-radius: 50%;
-  padding-right: 2rem;
 }
 /************ Features ************/
 .features {
