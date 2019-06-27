@@ -1,3 +1,12 @@
+.btn {
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #D0D0D0;
+  color: #FFFFFF;
+}
 /*
    CSS default reset
    http://meyerweb.com/eric/tools/css/reset/
@@ -159,6 +168,15 @@ h3 {
   font-size: 35px;
   line-height: 64px;
 }
+h4 {
+  font-size: 18px;
+  line-height: 2;
+}
+h6 {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.8;
+}
 button {
   background: #00897B;
   border-radius: 10px;
@@ -276,7 +294,7 @@ footer {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding-below: 2rem;
+  padding-bottom: 2rem;
 }
 .form-btn {
   background: #00897B;
@@ -286,7 +304,7 @@ footer {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding-below: 2rem;
+  padding-bottom: 2rem;
 }
 .cta .button {
   width: 33%;
@@ -330,7 +348,7 @@ aside fieldset {
 .features {
   display: flex;
   margin: auto;
-  justifycontent: space-around;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   padding: 3rem;
@@ -344,3 +362,36 @@ aside fieldset {
 .fblock {
   padding: 1rem;
 }
+.team {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  max-width: 75rem;
+}
+.member {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+.member img {
+  max-width: 100%;
+}
+.member .text {
+  padding: 0 20px 20px;
+}
+.aboutBtn.fab.fa-github {
+  background: #00897B;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}
+/*# sourceMappingURL=index.css.map */
