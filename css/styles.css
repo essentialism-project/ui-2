@@ -143,6 +143,7 @@ table {
     width: 1000px;
     /* TB LR */
     margin: 0 auto;
+
 }
 
 
@@ -169,7 +170,7 @@ h3 {
 }
 
 p {
-     font-size: 1.2rem;
+     font-size: 1rem;
      line-height: 1.4;
  }
 
@@ -209,13 +210,14 @@ nav a {
     display: flex;
     margin: auto;
     width: 80%;
+    align-items: center;
 }
 .button {
     background: #00897B;
     border: none;
     border-radius: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 1.2rem;
     line-height: 30px;
     text-align: center;
 }
@@ -224,7 +226,7 @@ nav a {
     border: none;
     border-radius: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 1.2rem;
     line-height: 30px;
     text-align: center;
     padding-below: 2rem;
@@ -239,12 +241,12 @@ nav a {
 .cta-img {
     width: 100%;
 }
-/* larger screen */
+
 aside fieldset {
     background: #FFFFFF;
     border: 5px solid #C4C4C4;
     border-radius: 15px;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     margin-top: 12rem;
     color: black;
 }
@@ -279,14 +281,15 @@ aside fieldset {
 
 .tabs {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #C4C4C4;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 .about-tabs {
     display: flex;
     margin: auto;
     justify-content: center;
     padding: 5rem;
-    border: 1px solid black;
+    border: 1px solid #C4C4C4;
 }
 .tabs .tabs-items {
     height: 300px;
@@ -308,8 +311,8 @@ aside fieldset {
 .tabs .tabs-link {
     padding: 20px 25px;
     background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border-right: 1px solid #C4C4C4;;
+    border-bottom: 1px solid #C4C4C4;;
     color: black;
     cursor: pointer;
     width: 25%;
@@ -330,9 +333,11 @@ aside fieldset {
     padding: 4rem;
     align-items: center;
 }
+
 .tabs-item-description img {
     padding-right: 3rem;
 }
+
 .tabs-item-description p {
     width: 45%;
     font-size: 24px;
@@ -382,15 +387,27 @@ aside fieldset {
     align-items: center;
     align-content: center;
 }
+
+.fblock {
+    padding: .4rem;
+    flex: 1;
+ }
+
 .block {
     align-items: center;
     align-content: center;
-    padding: 1.7rem;
-    border: 1px solid black;
+    padding: 1.7rem 1.2rem;
+    border: 1px solid #C4C4C4;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    height: 20rem;
 }
-.fblock {
-    padding: 1rem;
+
+.fblock p {
+    padding-top: 1rem;
 }
+
+/************** About the Team **********/
+
 .team {
     display: flex;
     margin: auto;
@@ -433,7 +450,7 @@ aside fieldset {
 footer {
     display: flex;
     padding: 5rem;
-    border-top: 1px solid #B8DEDA;
+    border-top: 2px solid #B8DEDA;
     margin-top: 2rem;
 }
 .footCol {
