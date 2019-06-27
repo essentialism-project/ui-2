@@ -375,7 +375,7 @@ aside fieldset {
 .testimonials {
     background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
     padding-bottom: 5rem;
-    flex-direction: column;
+
     flex-wrap: wrap;
 }
 
@@ -389,6 +389,10 @@ aside fieldset {
     flex-wrap: wrap;
 }
 
+
+
+
+
 .quote p {
     width: 40%;
     line-height: 1.4;
@@ -400,6 +404,27 @@ aside fieldset {
 
 .avatar {
     border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    .top-quote {
+
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .bottom-quote {
+        padding: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .quote p {
+        width: 80%;
+        line-height: 1.4;
+        padding-top: 1rem;
+    }
 }
 
 
