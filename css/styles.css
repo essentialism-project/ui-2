@@ -92,6 +92,7 @@ video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -107,17 +108,21 @@ nav,
 section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
+
 ol,
 ul {
     list-style: none;
 }
+
 blockquote,
 q {
     quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -125,12 +130,11 @@ q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
 
 
 /******************** Global CSS ***************/
@@ -139,13 +143,13 @@ table {
 * {
     font-family: 'Roboto', sans-serif;
 }
+
 .wrapper {
     width: 1000px;
     /* TB LR */
     margin: 0 auto;
 
 }
-
 
 
 h1,
@@ -156,23 +160,26 @@ h5,
 h6 {
     font-family: 'Roboto', sans-serif;
 }
+
 h1 {
     font-size: 3rem;
     line-height: 3rem;
 }
+
 h2 {
     font-size: 2rem;
     line-height: 2.75rem;
 }
+
 h3 {
     font-size: 1.7rem;
     line-height: 2.5rem;
 }
 
 p {
-     font-size: 1rem;
-     line-height: 1.4;
- }
+    font-size: 1rem;
+    line-height: 1.4;
+}
 
 /******************* Navigation ******************/
 
@@ -185,15 +192,18 @@ nav {
     left: 0;
     background-color: #e4e4e4;
 }
+
 .logo {
     max-height: 40px;
     margin-left: 2rem;
 }
+
 .leftnav {
     flex-grow: 1;
     align-items: center;
     align-content: center;
 }
+
 nav a {
     padding: 1em;
     text-decoration: none;
@@ -212,6 +222,7 @@ nav a {
     width: 80%;
     align-items: center;
 }
+
 .button {
     background: #00897B;
     border: none;
@@ -221,6 +232,7 @@ nav a {
     line-height: 30px;
     text-align: center;
 }
+
 .form-btn {
     background: #00897B;
     border: none;
@@ -231,13 +243,16 @@ nav a {
     text-align: center;
     padding-below: 2rem;
 }
+
 .cta .button {
     width: 33%;
 }
+
 .smaller {
     font-size: 8px;
     line-height: 9px;
 }
+
 .cta-img {
     width: 100%;
 }
@@ -275,15 +290,9 @@ aside fieldset {
 }
 
 
-
 /******************* Tabs  ******************/
 
 
-.tabs {
-    text-align: center;
-    border: 1px solid #C4C4C4;
-    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
-}
 .about-tabs {
     display: flex;
     margin: auto;
@@ -291,23 +300,31 @@ aside fieldset {
     padding: 5rem;
     border: 1px solid #C4C4C4;
 }
-.tabs .tabs-items {
-    height: 300px;
+
+.tabs {
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
+
 .tabs .tabs-item {
     display: none;
-    font-size: 24px;
+    font-size: 1.2rem;
     padding-bottom: 10px;
+
 }
+
 .tabs .tabs-item-selected {
     display: block;
 }
+
 .tabs .tabs-links {
     display: flex;
     justify-content: space-evenly;
     background: #D0D0D0;
     width: 100%;
 }
+
 .tabs .tabs-link {
     padding: 20px 25px;
     background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
@@ -316,17 +333,21 @@ aside fieldset {
     color: black;
     cursor: pointer;
     width: 25%;
+
+
 }
+
 .tabs-link:last-child {
     border-right: none;
 }
+
 .tabs .tabs-link-selected {
     z-index: 2;
     border-bottom: none;
-    background-color: #ffffff;
     color: black;
     background: white;
 }
+
 .tabs-item-description {
     display: flex;
     margin: auto;
@@ -339,11 +360,13 @@ aside fieldset {
 }
 
 .tabs-item-description p {
-    width: 45%;
-    font-size: 24px;
+    width: 40%;
+    font-size: 1rem;
     line-height: 2;
     text-align: left;
 }
+
+
 
 
 /*********** Testimonials *********/
@@ -352,14 +375,20 @@ aside fieldset {
 .testimonials {
     background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
     padding-bottom: 5rem;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
 .quote {
     display: flex;
     margin: auto;
     justify-content: center;
     padding-top: 3rem;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .quote p {
     width: 40%;
     line-height: 1.4;
@@ -374,9 +403,6 @@ aside fieldset {
 }
 
 
-
-
-
 /************ Features ************/
 
 
@@ -386,12 +412,16 @@ aside fieldset {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .fblock {
     padding: .4rem;
     flex: 1;
- }
+    justify-content: center;
+
+}
 
 .block {
     align-items: center;
@@ -404,7 +434,9 @@ aside fieldset {
 
 .fblock p {
     padding-top: 1rem;
+    max-width: 300px;
 }
+
 
 /************** About the Team **********/
 
@@ -417,6 +449,7 @@ aside fieldset {
     justify-content: space-between;
     max-width: 75rem;
 }
+
 .member {
     width: 200px;
     margin: 10px;
@@ -424,12 +457,15 @@ aside fieldset {
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
 }
+
 .member img {
     max-width: 100%;
 }
+
 .member .text {
     padding: 0 20px 20px;
 }
+
 .aboutBtn.fab.fa-github {
     background: #00897B;
     border: none;
@@ -442,8 +478,6 @@ aside fieldset {
 }
 
 
-
-
 /*********************** Footer ******************/
 
 
@@ -453,6 +487,7 @@ footer {
     border-top: 2px solid #B8DEDA;
     margin-top: 2rem;
 }
+
 .footCol {
     padding: 0 2rem;
 }
