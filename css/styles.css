@@ -367,6 +367,47 @@ aside fieldset {
 }
 
 
+@media (max-width: 500px) {
+    .about-tabs {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        padding: 0;
+        border: 1px solid #C4C4C4;
+    }
+
+    .tabs {
+        text-align: center;
+        border: 1px solid #C4C4C4;
+        box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .tabs .tabs-item {
+        display: none;
+        font-size: 1.2rem;
+        padding-bottom: 10px;
+
+    }
+
+
+
+    .tabs-item-description {
+        display: flex;
+        margin: auto;
+        width: 90%;
+
+
+    }
+
+    .tabs-item-description img {
+
+    }
+
+    .tabs-item-description p {
+
+    }
+}
+
 
 
 /*********** Testimonials *********/
@@ -437,6 +478,7 @@ aside fieldset {
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 .fblock {
@@ -446,7 +488,7 @@ aside fieldset {
 }
 
 .block {
-    padding: 1.7rem 1.2rem;
+    padding: 1.7rem 1rem;
     border: 1px solid #C4C4C4;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
     height: 20rem;
@@ -454,8 +496,10 @@ aside fieldset {
 
 .fblock p {
     padding-top: 1rem;
-    max-width: 300px;
+
 }
+
+
 
 @media (max-width: 500px) {
     .block {
@@ -468,9 +512,6 @@ aside fieldset {
         height: 80%;
     }
 
-    .fblock p {
-        max-width: 25rem;
-    }
 
 
 }
