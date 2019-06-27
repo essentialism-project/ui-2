@@ -156,20 +156,20 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 h1 {
-    font-size: 63px;
-    line-height: 80px;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 h2 {
-    font-size: 52px;
-    line-height: 80px;
+    font-size: 2rem;
+    line-height: 2.75rem;
 }
 h3 {
-    font-size: 35px;
-    line-height: 64px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
 }
 
 p {
-     font-size: 16px;
+     font-size: 1.2rem;
      line-height: 1.4;
  }
 
