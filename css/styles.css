@@ -145,17 +145,7 @@ table {
     margin: 0 auto;
 }
 
-@media (max-width: 800px) {
-    .wrapper {
-        width: 800px;
-    }
-}
 
-@media (max-width: 500px) {
-    .wrapper {
-        width: 500px;
-    }
-}
 
 h1,
 h2,
@@ -259,6 +249,28 @@ aside fieldset {
     color: black;
 }
 
+@media (max-width: 800px) {
+    .wrapper {
+        width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 500px;
+    }
+
+    .cta-img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    fieldset {
+        display: none;
+    }
+
+
+}
 
 
 
