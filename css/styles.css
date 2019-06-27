@@ -434,9 +434,7 @@ aside fieldset {
 .features {
     display: flex;
     margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -445,12 +443,9 @@ aside fieldset {
     padding: .4rem;
     flex: 1;
     justify-content: center;
-
 }
 
 .block {
-    align-items: center;
-    align-content: center;
     padding: 1.7rem 1.2rem;
     border: 1px solid #C4C4C4;
     box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
@@ -460,6 +455,24 @@ aside fieldset {
 .fblock p {
     padding-top: 1rem;
     max-width: 300px;
+}
+
+@media (max-width: 500px) {
+    .block {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .fblock img {
+        height: 80%;
+    }
+
+    .fblock p {
+        max-width: 25rem;
+    }
+
+
 }
 
 
