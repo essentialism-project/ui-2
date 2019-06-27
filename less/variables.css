@@ -1,0 +1,12 @@
+// Media Queries
+@mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
+
+// Color assignments
+@button-bg: @teal;
+
+// Colors
+@teal: #D0D0D0;
+@tealLt: #D0D0D0;
+@errorRed: #D0D0D0;
+@white: #FFFFFF;

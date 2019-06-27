@@ -132,10 +132,10 @@ table {
 * {
   font-family: 'Roboto', sans-serif;
 }
-body {
+.wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 75rem;
+  max-width: 1280px;
   margin: auto;
 }
 /** Text Header Styles **/
@@ -163,6 +163,10 @@ button {
   background: #00897B;
   border-radius: 10px;
 }
+p {
+  font-size: 24px;
+  line-height: 1.4;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -173,6 +177,7 @@ nav {
 }
 .logo {
   max-height: 40px;
+  margin-left: 2rem;
 }
 .leftnav {
   flex-grow: 1;
@@ -192,7 +197,7 @@ nav a {
   display: flex;
   margin: auto;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 5rem;
 }
 .tabs .tabs-items {
   height: 300px;
@@ -213,7 +218,7 @@ nav a {
 }
 .tabs .tabs-link {
   padding: 20px 25px;
-  background-color: white;
+  background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   color: black;
@@ -228,6 +233,7 @@ nav a {
   border-bottom: none;
   background-color: #ffffff;
   color: black;
+  background: white;
 }
 .tabs-item-description {
   display: flex;
@@ -243,6 +249,15 @@ nav a {
   font-size: 24px;
   line-height: 2;
   text-align: left;
+}
+footer {
+  display: flex;
+  padding: 5rem;
+  border-top: 1px solid #B8DEDA;
+  margin-top: 2rem;
+}
+.footCol {
+  padding: 0 2rem;
 }
 /** Call to Action section **/
 .cta {
@@ -292,44 +307,40 @@ aside fieldset {
   margin-top: 12rem;
   color: black;
 }
-/*********** Testimonials Section *********/
+/*********** Testimonials *********/
 .testimonials {
-  display: flex;
-  padding: 5%;
   background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
-  margin: auto;
 }
 .quote {
-  margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: auto;
+  justify-content: center;
+  padding-top: 5rem;
 }
-.quote .text-content {
-  width: 48%;
-  padding-right: 1%;
+.quote p {
+  width: 50%;
+  line-height: 1.4;
+  font-size: 24px;
 }
-.quote .img-content {
-  width: 48%;
-  padding-left: 1%;
-}
-.quote .img-content img {
+.avatar {
   border-radius: 50%;
+  padding-right: 2rem;
 }
-inverse-testimonials {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-}
-inverse-testimonials .text-content {
-  padding-left: 1%;
-  padding-right: 0;
-}
-/************ Features Grid ************/
+/************ Features ************/
 .features {
   display: flex;
   margin: auto;
-  justifycontent: space-between;
+  justifycontent: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 3rem;
+}
+.block {
+  align-items: center;
+  align-content: center;
+  padding: 1.7rem;
+  border: 1px solid black;
 }
 .fblock {
-  border: 1px solid black;
+  padding: 1rem;
 }

@@ -46,45 +46,41 @@ aside fieldset {
   margin-top: 12rem;
   color: black;
 }
-/*********** Testimonials Section *********/
+/*********** Testimonials *********/
 .testimonials {
-  display: flex;
-  padding: 5%;
   background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
-  margin: auto;
 }
 .quote {
-  margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin: auto;
+  justify-content: center;
+  padding-top: 5rem;
 }
-.quote .text-content {
-  width: 48%;
-  padding-right: 1%;
+.quote p {
+  width: 50%;
+  line-height: 1.4;
+  font-size: 24px;
 }
-.quote .img-content {
-  width: 48%;
-  padding-left: 1%;
-}
-.quote .img-content img {
+.avatar {
   border-radius: 50%;
+  padding-right: 2rem;
 }
-inverse-testimonials {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-}
-inverse-testimonials .text-content {
-  padding-left: 1%;
-  padding-right: 0;
-}
-/************ Features Grid ************/
+/************ Features ************/
 .features {
   display: flex;
   margin: auto;
-  justifycontent: space-between;
+  justifycontent: space-around;
+  align-items: center;
+  align-content: center;
+  padding: 3rem;
+}
+.block {
+  align-items: center;
+  align-content: center;
+  padding: 1.7rem;
+  border: 1px solid black;
 }
 .fblock {
-  border: 1px solid black;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main-content.css.map */
