@@ -1,12 +1,3 @@
-.btn {
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: #D0D0D0;
-    color: #FFFFFF;
-}
 /*
    CSS default reset
    http://meyerweb.com/eric/tools/css/reset/
@@ -102,6 +93,7 @@ video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -137,17 +129,34 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-/** begin styles.css **/
+
+
+
+
+/******************** Global CSS ***************/
+
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    max-width: 75rem;
-    margin: auto;
+    width: 1000px;
+    /* TB LR */
+    margin: 0 auto;
 }
-/** Text Header Styles **/
+
+@media (max-width: 800px) {
+    .wrapper {
+        width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 500px;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -168,14 +177,15 @@ h3 {
     font-size: 35px;
     line-height: 64px;
 }
-button {
-    background: #00897B;
-    border-radius: 10px;
-}
+
 p {
-    font-size: 16px;
-    line-height: 1.4;
-}
+     font-size: 16px;
+     line-height: 1.4;
+ }
+
+/******************* Navigation ******************/
+
+
 nav {
     display: flex;
     flex-direction: row;
@@ -198,6 +208,63 @@ nav a {
     text-decoration: none;
     color: black;
 }
+
+/************* Call to Action section **************/
+
+
+.cta {
+    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
+    color: white;
+    padding: 10%;
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.button {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+}
+.form-btn {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    padding-below: 2rem;
+}
+.cta .button {
+    width: 33%;
+}
+.smaller {
+    font-size: 8px;
+    line-height: 9px;
+}
+.cta-img {
+    width: 100%;
+}
+/* larger screen */
+aside fieldset {
+    background: #FFFFFF;
+    border: 5px solid #C4C4C4;
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    margin-top: 12rem;
+    color: black;
+}
+
+
+
+
+/******************* Tabs  ******************/
+
+
 .tabs {
     text-align: center;
     border: 1px solid black;
@@ -260,63 +327,11 @@ nav a {
     line-height: 2;
     text-align: left;
 }
-footer {
-    display: flex;
-    padding: 5rem;
-    border-top: 1px solid #B8DEDA;
-    margin-top: 2rem;
-}
-.footCol {
-    padding: 0 2rem;
-}
-/** Call to Action section **/
-.cta {
-    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-    color: white;
-    padding: 10%;
-    display: flex;
-    margin: auto;
-    width: 80%;
-}
-.button {
-    background: #00897B;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-}
-.form-btn {
-    background: #00897B;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 24px;
-    line-height: 30px;
-    text-align: center;
-    padding-below: 2rem;
-}
-.cta .button {
-    width: 33%;
-}
-.smaller {
-    font-size: 8px;
-    line-height: 9px;
-}
-.cta-img {
-    width: 100%;
-}
-/* larger screen */
-aside fieldset {
-    background: #FFFFFF;
-    border: 5px solid #C4C4C4;
-    border-radius: 15px;
-    padding: 4rem 2rem;
-    margin-top: 12rem;
-    color: black;
-}
+
+
 /*********** Testimonials *********/
+
+
 .testimonials {
     background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
     padding-bottom: 5rem;
@@ -340,7 +355,14 @@ aside fieldset {
 .avatar {
     border-radius: 50%;
 }
+
+
+
+
+
 /************ Features ************/
+
+
 .features {
     display: flex;
     margin: auto;
@@ -389,4 +411,19 @@ aside fieldset {
     text-align: center;
     padding: 0.2rem 0.5rem;
 }
-/*# sourceMappingURL=index.css.map */
+
+
+
+
+/*********************** Footer ******************/
+
+
+footer {
+    display: flex;
+    padding: 5rem;
+    border-top: 1px solid #B8DEDA;
+    margin-top: 2rem;
+}
+.footCol {
+    padding: 0 2rem;
+}
