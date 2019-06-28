@@ -145,7 +145,7 @@ table {
 }
 
 .wrapper {
-    width: 1000px;
+    width: 1500px;
     /* TB LR */
     margin: 0 auto;
 }
@@ -225,6 +225,7 @@ nav a {
     padding: 1em;
     text-decoration: none;
     color: #565656;
+    border: none;
 }
 
 nav a:hover {
@@ -244,6 +245,10 @@ nav.mobile {
 
     nav.mobile {
         display: flex;
+    }
+
+    nav.mobile a:last-child {
+        padding-right: 3rem;
     }
 }
 
@@ -273,9 +278,7 @@ nav.mobile {
 
 .button:hover {
     background: #f4f4f4;
-    border: 2px solid #00897B;
     box-sizing: border-box;
-    border-radius: 10px;
     color: #565656;
 
 }
@@ -291,8 +294,19 @@ nav.mobile {
 }
 
 .cta .button {
+    width: 25%;
+}
+
+.button.form-btn {
     width: 33%;
 }
+
+@media (max-width: 800px) {
+    .cta .button {
+        width: 33%;
+    }
+}
+
 
 
 .aboutBtn.fab.fa-github:hover {
@@ -438,9 +452,6 @@ aside fieldset {
 
     }
 
-    .tabs-links {
-        width: 100%;
-    }
 
     .tabs-link {
         text-align: center;
@@ -448,7 +459,7 @@ aside fieldset {
     }
 
     .tabs .tabs-links {
-        width: 90%;
+        width: 100%;
 
     }
 
