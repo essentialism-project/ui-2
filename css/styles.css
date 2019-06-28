@@ -145,10 +145,11 @@ table {
 }
 
 .wrapper {
-    width: 100%;
+    width: 80%;
     /* TB LR */
     margin: 0 auto;
-}
+}git branch
+
 
 
 h1,
@@ -237,8 +238,12 @@ nav.mobile {
     display: none;
 }
 
-/**************** Mobile Navigation ************/
-@media (max-width: 500px) {
+/**************** Tablet Navigation ************/
+@media (max-width: 800px) {
+    .wrapper {
+        width:100%;
+    }
+
     nav.desktop {
         display: none;
     }
@@ -249,6 +254,13 @@ nav.mobile {
 
     nav.mobile a:last-child {
         padding-right: 3rem;
+    }
+}
+
+/*************** Mobile Navigation ***************/
+@media (max-width: 600px) {
+    .wrapper {
+        width:100%;
     }
 }
 
