@@ -148,7 +148,6 @@ table {
     width: 1000px;
     /* TB LR */
     margin: 0 auto;
-
 }
 
 
@@ -207,9 +206,22 @@ nav {
 nav a {
     padding: 1em;
     text-decoration: none;
-    color: black;
+    color: #565656;
 }
 
+nav.mobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav.desktop {
+        display: none;
+    }
+
+    nav.mobile {
+        display: flex;
+    }
+}
 /************* Call to Action section **************/
 
 
@@ -229,17 +241,17 @@ nav a {
     border-radius: 10px;
     color: white;
     font-size: 1.2rem;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: center;
 }
 
 .form-btn {
-    background: #00897B;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 1.2rem;
-    line-height: 30px;
+    font-size: 1rem;
+    float: right;
+    padding: .2rem;
+}
+
+.fas.fa-eye {
     float: right;
 }
 
@@ -268,21 +280,14 @@ aside fieldset {
     border-radius: 15px;
     padding: 1.5rem .5rem;
     margin-top: 2rem;
-    color: black;
+    color: #565656;
     align-items: start;
  }
-.form-group {
 
-}
 .form-group, .smaller {
     line-height: 1.4;
 }
 
-@media (max-width: 800px) {
-    .wrapper {
-        width: 800px;
-    }
-}
 
 @media (max-width: 500px) {
     .wrapper {
@@ -342,7 +347,7 @@ aside fieldset {
     background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
     border-right: 1px solid #C4C4C4;;
     border-bottom: 1px solid #C4C4C4;;
-    color: black;
+    color: #565656;
     cursor: pointer;
     width: 25%;
 }
@@ -354,7 +359,7 @@ aside fieldset {
 .tabs .tabs-link-selected {
     z-index: 2;
     border-bottom: none;
-    color: black;
+    color: #565656;
     background: white;
 }
 
@@ -494,6 +499,7 @@ aside fieldset {
     justify-content: center;
 }
 
+
 .block {
     padding: 1.7rem 1rem;
     border: 1px solid #C4C4C4;
@@ -569,11 +575,60 @@ aside fieldset {
 
 footer {
     display: flex;
-    padding: 5rem;
+    padding-top: 5rem;
     border-top: 2px solid #B8DEDA;
     margin-top: 2rem;
+
 }
 
-.footCol {
-    padding: 0 2rem;
+.foot {
+   display: block;
+    flex-direction: column;
+    margin: auto;
 }
+
+.footLeft {
+    flex:1;
+}
+.footCtr {
+    text-align: center;
+    flex: 1;
+}
+
+.footRight {
+    text-align: right; flex:1;
+}
+
+.foot.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.fab {
+   padding: 1rem;
+    color: #231F20;
+}
+
+ul .foot.social li image{
+    text-decoration: none;
+
+
+}
+
+@media (max-width: 800px) {
+    footer {
+        display: block;
+    }
+
+    .footLeft, .footRight {
+        display: none;
+    }
+    .footCtr {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
