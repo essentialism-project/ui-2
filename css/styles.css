@@ -1,29 +1,90 @@
-/*  Essentialism App Marketing Page
-    Build Week 1:  User Interface
-    Lisa Taylor
-    Lambda School
- */
-
 /*
    CSS default reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -31,122 +92,488 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-/** begin styles.css **/
+
+/******************** Global CSS ***************/
+
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper {
+    width: 1000px;
+    /* TB LR */
+    margin: 0 auto;
+
+}
 
 
-/** Text Header Styles **/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-size: 63px;
-    line-height: 80px;
+    font-size: 3rem;
+    line-height: 3rem;
 }
 
 h2 {
-    font-size: 52px;
-    line-height: 80px;
+    font-size: 2rem;
+    line-height: 2.75rem;
 }
 
 h3 {
-    font-size: 35px;
-    line-height: 64px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
 }
 
-/** Call to Action section **/
-.cta {
-    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-    color: white;
-    padding: 7rem 6rem;
-
+p {
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
-.cta-top h1 {
-    padding-bottom: 100px;
-    margin-left: 3%;
-}
+/******************* Navigation ******************/
 
-.main-content {
-    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
-}
-
-.left-content img {
-    max-width:70%;
-}
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    top: 0;
+    left: 0;
     background-color: #e4e4e4;
-    padding: 0 1rem;
-}
-
-nav a {
-    background-color: #e4e4e4;
-    text-decoration: none;
 }
 
 .logo {
-    margin: 0 0 0 0.45em;
-    max-height: 50px;
+    max-height: 40px;
+    margin-left: 2rem;
 }
 
-.logo a {
-    background-color: #e4e4e4;
+.leftnav {
+    flex-grow: 1;
+    align-items: center;
+    align-content: center;
 }
 
-.logo,
-.navigation {
-    list-style: none;
-}
-
-.logo a,
-.navigation a {
-    text-decoration: none;
-    background-color: #e4e4e4;
-}
-
-.navigation {
-    display: flex;
-}
-
-.navigation a {
-    display: block;
+nav a {
     padding: 1em;
+    text-decoration: none;
     color: black;
 }
 
-.navigation a:hover {
-    background-color: black;
+/************* Call to Action section **************/
+
+
+.cta {
+    background: radial-gradient(698.36px at 50% 50%, #6D6D6D 0%, #363636 59.63%, #282828 100%);
     color: white;
+    padding: 10%;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+}
+
+.button {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.form-btn {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 30px;
+    float: right;
+}
+
+.cta .button {
+    width: 33%;
+}
+
+input {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+
+.smaller {
+    font-size: 8px;
+    line-height: 9px;
+}
+
+.cta-img {
+    width: 100%;
+}
+
+aside fieldset {
+    background: #FFFFFF;
+    border: 3px solid #C4C4C4;
+    border-radius: 15px;
+    padding: 1.5rem .5rem;
+    margin-top: 2rem;
+    color: black;
+    align-items: start;
+ }
+.form-group {
+
+}
+.form-group, .smaller {
+    line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+    .wrapper {
+        width: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper {
+        width: 500px;
+    }
+
+    .cta-img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    fieldset {
+        display: none;
+    }
+
+
+}
+
+
+/******************* Tabs  ******************/
+
+
+.about-tabs {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 5rem;
+    border: 1px solid #C4C4C4;
+}
+
+.tabs {
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tabs .tabs-item {
+    display: none;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+
+}
+
+.tabs .tabs-item-selected {
+    display: block;
+}
+
+.tabs .tabs-links {
+    display: flex;
+    justify-content: space-evenly;
+    background: #D0D0D0;
+    width: 100%;
+}
+
+.tabs .tabs-link {
+    padding: 20px 25px;
+    background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
+    border-right: 1px solid #C4C4C4;;
+    border-bottom: 1px solid #C4C4C4;;
+    color: black;
+    cursor: pointer;
+    width: 25%;
+}
+
+.tabs-link:last-child {
+    border-right: none;
+}
+
+.tabs .tabs-link-selected {
+    z-index: 2;
+    border-bottom: none;
+    color: black;
+    background: white;
+}
+
+.tabs-item-description {
+    display: flex;
+    margin: auto;
+    padding: 4rem;
+    align-items: center;
+}
+
+.tabs-item-description img {
+    padding-right: 3rem;
+}
+
+.tabs-item-description p {
+    width: 40%;
+    font-size: 1rem;
+    line-height: 2;
+    text-align: left;
+}
+
+
+@media (max-width: 500px) {
+    .tabs {
+        width:100%;
+    }
+    .about-tabs {
+        padding: 0;
+
+
+    }
+    .tabs-links {
+        width:100%;
+    }
+    .tabs-link {
+        text-align: center;
+        background: white;
+    }
+    .tabs .tabs-links {
+        width: 90%;
+
+    }
+
+    .tabs .tabs-item {
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+
+    .tabs-item-description {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .tabs-item-description img {
+        height: 25%;
+        padding: 0 1rem;
+    }
+
+    .tabs-item-description p {
+        width: 90%;
+        padding-top: 2rem;
+    }
+
+}
+
+
+
+/*********** Testimonials *********/
+
+
+.testimonials {
+    background: linear-gradient(170deg, #B8DEDA 13.24%, rgba(184, 222, 218, 0) 67.59%);
+    padding-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.quote {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 3rem;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quote p {
+    width: 40%;
+    line-height: 1.4;
+}
+
+.quote.top-quote p {
+    padding-left: 2rem;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    .top-quote {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+     .bottom-quote {
+        padding: 1rem;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .quote p {
+        width: 80%;
+        line-height: 1.4;
+        padding: 1rem 1rem 0 0;
+    }
+}
+
+
+/************ Features ************/
+
+
+.features {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.fblock {
+    padding: .4rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.block {
+    padding: 1.7rem 1rem;
+    border: 1px solid #C4C4C4;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
+    height: 20rem;
+}
+
+.fblock p {
+    padding-top: 1rem;
+
+}
+
+
+
+@media (max-width: 500px) {
+    .block {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .fblock img {
+        height: 80%;
+    }
+
+
+
+}
+
+
+/************** About the Team **********/
+
+.team {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    max-width: 75rem;
+}
+
+.member {
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.member img {
+    max-width: 100%;
+}
+
+.member .text {
+    padding: 0 20px 20px;
+}
+
+.aboutBtn.fab.fa-github {
+    background: #00897B;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0.2rem 0.5rem;
+}
+
+
+/*********************** Footer ******************/
+
+
+footer {
+    display: flex;
+    padding: 5rem;
+    border-top: 2px solid #B8DEDA;
+    margin-top: 2rem;
+}
+
+.footCol {
+    padding: 0 2rem;
 }
