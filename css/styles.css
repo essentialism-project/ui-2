@@ -240,12 +240,17 @@ nav a {
     color: white;
     font-size: 1.2rem;
     line-height: 30px;
-    text-align: center;
-    padding-below: 2rem;
+    float: right;
 }
 
 .cta .button {
     width: 33%;
+}
+
+input {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 }
 
 .smaller {
@@ -259,11 +264,18 @@ nav a {
 
 aside fieldset {
     background: #FFFFFF;
-    border: 5px solid #C4C4C4;
+    border: 3px solid #C4C4C4;
     border-radius: 15px;
-    padding: 4rem 1rem;
-    margin-top: 12rem;
+    padding: 1.5rem .5rem;
+    margin-top: 2rem;
     color: black;
+    align-items: start;
+ }
+.form-group {
+
+}
+.form-group, .smaller {
+    line-height: 1.4;
 }
 
 @media (max-width: 800px) {
@@ -366,6 +378,9 @@ aside fieldset {
 
 
 @media (max-width: 500px) {
+    .tabs {
+        width:100%;
+    }
     .about-tabs {
         padding: 0;
 
