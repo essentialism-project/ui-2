@@ -146,11 +146,8 @@ table {
 
 .wrapper {
     width: 80%;
-    /* TB LR */
     margin: 0 auto;
-}git branch
-
-
+}
 
 h1,
 h2,
@@ -206,25 +203,20 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    top: 0;
-    left: 0;
     background-color: #e4e4e4;
 }
 
 .logo {
-    max-height: 40px;
+    max-height: 2rem;
     margin-left: 2rem;
 }
 
 .leftnav {
     flex-grow: 1;
-    align-items: center;
-    align-content: center;
 }
 
 nav a {
     padding: 1em;
-    text-decoration: none;
     color: #565656;
     border: none;
 }
@@ -239,6 +231,7 @@ nav.mobile {
 }
 
 /**************** Tablet Navigation ************/
+
 @media (max-width: 800px) {
     .wrapper {
         width:100%;
@@ -258,6 +251,7 @@ nav.mobile {
 }
 
 /*************** Mobile Navigation ***************/
+
 @media (max-width: 600px) {
     .wrapper {
         width:100%;
@@ -290,7 +284,6 @@ nav.mobile {
 
 .button:hover {
     background: #f4f4f4;
-    box-sizing: border-box;
     color: #565656;
 
 }
@@ -319,19 +312,8 @@ nav.mobile {
     }
 }
 
-
-
-.aboutBtn.fab.fa-github:hover {
-    background: #f4f4f4;
-    border: 1px solid #00897B;
-    box-sizing: border-box;
-    border-radius: 10px;
-    color: #565656;
-}
-
 input {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -374,8 +356,6 @@ aside fieldset {
     fieldset {
         display: none;
     }
-
-
 }
 
 
@@ -556,14 +536,14 @@ aside fieldset {
 .features {
     display: flex;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-
+    padding: 3rem;
 }
 
 .fblock {
-    padding: .4rem;
+    padding: 2rem;
     flex: 1;
     justify-content: center;
     display: flex;
@@ -580,7 +560,14 @@ aside fieldset {
 
 .fblock p {
     padding-top: 1rem;
+    display: flex;
+    margin: auto;
 
+}
+
+.fblock img {
+    display: flex;
+    margin: auto;
 }
 
 
@@ -621,7 +608,7 @@ aside fieldset {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     line-height: 2;
     max-width: 70%;
 
@@ -632,8 +619,8 @@ aside fieldset {
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
-
     background: white;
+    align-items: end;
 }
 
 .member img {
@@ -641,30 +628,34 @@ aside fieldset {
 }
 
 .member .text {
-    padding: 0 1rem;
-
+    padding: 1rem;
 }
-
+/****** Github button on team page ****/
 .aboutBtn.fab.fa-github {
-    background: #00897B;
-    border: none;
+    color: #00897B;
+    border: 1px solid #00897B;
     border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    line-height: 30px;
+    line-height: 1.2;
     text-align: center;
     padding: 0.2rem 0.5rem;
 }
 
-
+.aboutBtn.fab.fa-github:hover {
+    background: #f4f4f4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #565656;
+}
 /*********************** Footer ******************/
 
+
+/*** Footer links need to be updated ***/
 
 footer {
     display: flex;
     padding-top: 5rem;
     border-top: 2px solid #B8DEDA;
-    margin-top: 2rem;
+    margin: 2rem 1rem 4rem 1rem;
 
 }
 
