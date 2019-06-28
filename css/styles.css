@@ -448,8 +448,6 @@ aside fieldset {
 
     .about-tabs {
         padding: 0;
-
-
     }
 
 
@@ -460,7 +458,6 @@ aside fieldset {
 
     .tabs .tabs-links {
         width: 100%;
-
     }
 
     .tabs .tabs-item {
@@ -608,10 +605,11 @@ aside fieldset {
     margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: space-evenly;
     padding: 2rem 2rem 0 2rem;
     line-height: 2;
+    max-width: 70%;
 
 }
 
@@ -620,7 +618,7 @@ aside fieldset {
     margin: 10px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
+
     background: white;
 }
 
@@ -629,7 +627,8 @@ aside fieldset {
 }
 
 .member .text {
-    padding: 0 20px 20px;
+    padding: 0 1rem;
+
 }
 
 .aboutBtn.fab.fa-github {
