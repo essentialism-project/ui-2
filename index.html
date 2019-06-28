@@ -11,10 +11,14 @@
 
 <body>
 <div class="wrapper">
+
+    /*************** NAVIGATION ***************/
+
+    // Full desktop navbar
     <nav class="desktop">
         <nav class="leftnav">
             <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active"
-                                                                                        href="/index.html">
+                                                                                        href="https://friedmacaroni.netlify.com/index.html">
             Essentialism</a>
         </nav>
         <nav class="rightnav">
@@ -25,6 +29,7 @@
         </nav>
     </nav>
 
+    // Shortened mobile nav
     <nav class="mobile">
         <nav class="leftnav">
             <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active"
@@ -36,7 +41,10 @@
             <a href="https://wizardly-swirles-43fdf7.netlify.com/signup1" class="rightnav">Sign Up</a>
         </nav>
     </nav>
+
+    /************** CALL TO ACTION (CTA) SECTION ***********/
     <section class="cta">
+        /****** Left Side *****/
         <article>
             <h1>Find your life meaning</h1>
             <h2>Focus on the Essentials</h2><br>
@@ -48,6 +56,8 @@
             <img class="cta-img" src="img/undraw_contemplating_8t0x.svg">
         </article>
 
+
+        /************** CTA LOGIN FORM **********/
         <aside>
             <form>
                 <fieldset>
@@ -60,7 +70,6 @@
                         <label for="pass">Password</label><br>
                         <span><input type="text" name="password" id="pass"><i class="fas fa-eye"></i></span>
                         <a href="#"><p class="smaller">forgot your password?</p></a>
-
                     </div>
                     <br><br>
                     <input class="button form-btn" type="submit" value="Sign In">
@@ -69,10 +78,11 @@
         </aside>
     </section>
 
+    /*************** TABS COMPONENT ************/
 
     <section class="about-tabs">
-        <!-- TABS COMPONENT -->
         <div class="tabs">
+            // Tab Titles
             <div class="tabs-links">
                 <div class="tabs-link tabs-link-selected" data-tab="growth">Grow</div>
                 <div class="tabs-link" data-tab="organize">Organize</div>
@@ -82,7 +92,7 @@
                 <div class="tabs-link" data-tab="answers">Answers</div>
             </div>
 
-            <!-- TAB CONTENTS -->
+            // Tab Contents
             <div class="tabs-item tabs-item-selected" data-tab="growth">
                 <div class="tabs-item-description">
                     <img src="img/undraw_going_up_ttm5.png">
@@ -116,6 +126,7 @@
         </div>
     </section>
 
+    /************ TESTIMONIALS *********/
 
     <div class="testimonials">
         <div class="quote top-quote">
@@ -131,8 +142,8 @@
         </div>
     </div>
 
+    /**************** FEATURES BLOCKS ************/
     <div class="features">
-
         <div class="fblock">
             <div class="block">
                 <img src="img/1.png" alt="Sample photo">
@@ -158,6 +169,7 @@
     </div>
     </section>
 
+    /**************** FOOTER **************/
     <footer>
         <div class="foot footLeft">
             <p>Privacy Policy</p>
@@ -183,6 +195,7 @@
 
 
 </div>
+/*********** JAVASCRIPT ***********/
 <script src="js/tabs.js"></script>
 <script src="js/index.js"></script>
 </body>
