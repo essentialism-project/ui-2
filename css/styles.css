@@ -145,7 +145,7 @@ table {
 }
 
 .wrapper {
-    width: 1500px;
+    width: 100%;
     /* TB LR */
     margin: 0 auto;
 }
@@ -554,6 +554,8 @@ aside fieldset {
     padding: .4rem;
     flex: 1;
     justify-content: center;
+    display: flex;
+    margin: auto;
 }
 
 
