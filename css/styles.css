@@ -179,6 +179,7 @@ h4 {
     font-size: 1.4rem;
     line-height: 1.4;
 }
+
 h5 {
     font-size: 1.75rem;
 
@@ -187,9 +188,14 @@ h5 {
 h6 {
     font-style: italic;
 }
+
 p {
     font-size: 1rem;
     line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
 }
 
 /******************* Navigation ******************/
@@ -221,10 +227,16 @@ nav a {
     color: #565656;
 }
 
+nav a:hover {
+    background: #B8DEDA;
+    color: white;
+}
+
 nav.mobile {
     display: none;
 }
 
+/**************** Mobile Navigation ************/
 @media (max-width: 500px) {
     nav.desktop {
         display: none;
@@ -234,6 +246,7 @@ nav.mobile {
         display: flex;
     }
 }
+
 /************* Call to Action section **************/
 
 
@@ -249,12 +262,22 @@ nav.mobile {
 
 .button {
     background: #00897B;
-    border: none;
+    border: 2px solid #00897B;
     border-radius: 10px;
     color: white;
     font-size: 1.2rem;
     line-height: 1.5;
     text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #f4f4f4;
+    border: 2px solid #00897B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #565656;
+
 }
 
 .form-btn {
@@ -271,10 +294,19 @@ nav.mobile {
     width: 33%;
 }
 
+
+.aboutBtn.fab.fa-github:hover {
+    background: #f4f4f4;
+    border: 1px solid #00897B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #565656;
+}
+
 input {
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .smaller {
@@ -294,7 +326,9 @@ aside fieldset {
     margin-top: 2rem;
     color: #565656;
     align-items: start;
- }
+}
+
+
 
 .form-group, .smaller {
     line-height: 1.4;
@@ -356,7 +390,7 @@ aside fieldset {
 
 .tabs .tabs-link {
     padding: 20px 25px;
-    background: linear-gradient(to bottom, #d0d0d0 0%, #f4f4ff 100%);
+    background: linear-gradient(to bottom, #f4f4f4 81%,#ffffff 100%);
     border-right: 1px solid #C4C4C4;;
     border-bottom: 1px solid #C4C4C4;;
     color: #565656;
@@ -371,7 +405,6 @@ aside fieldset {
 .tabs .tabs-link-selected {
     z-index: 2;
     border-bottom: none;
-    color: #565656;
     background: white;
 }
 
@@ -396,20 +429,24 @@ aside fieldset {
 
 @media (max-width: 500px) {
     .tabs {
-        width:100%;
+        width: 100%;
     }
+
     .about-tabs {
         padding: 0;
 
 
     }
+
     .tabs-links {
-        width:100%;
+        width: 100%;
     }
+
     .tabs-link {
         text-align: center;
         background: white;
     }
+
     .tabs .tabs-links {
         width: 90%;
 
@@ -437,7 +474,6 @@ aside fieldset {
     }
 
 }
-
 
 
 /*********** Testimonials *********/
@@ -478,13 +514,14 @@ aside fieldset {
         flex-wrap: wrap;
     }
 
-     .bottom-quote {
+    .bottom-quote {
         padding: 1rem;
         margin-top: 2rem;
         display: flex;
         flex-direction: column-reverse;
         flex-wrap: wrap;
     }
+
     .quote p {
         width: 80%;
         line-height: 1.4;
@@ -525,7 +562,6 @@ aside fieldset {
 }
 
 
-
 @media (max-width: 500px) {
     .block {
         display: flex;
@@ -536,7 +572,6 @@ aside fieldset {
     .fblock img {
         height: 80%;
     }
-
 
 
 }
@@ -556,6 +591,7 @@ aside fieldset {
     padding-top: 5rem;
     line-height: 4;
 }
+
 .team {
     display: flex;
     margin: auto;
@@ -609,21 +645,23 @@ footer {
 }
 
 .foot {
-   display: block;
+    display: block;
     flex-direction: column;
     margin: auto;
 }
 
 .footLeft {
-    flex:1;
+    flex: 1;
 }
+
 .footCtr {
     text-align: center;
     flex: 1;
 }
 
 .footRight {
-    text-align: right; flex:1;
+    text-align: right;
+    flex: 1;
 }
 
 .foot.social {
@@ -631,12 +669,18 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .fab {
-   padding: 1rem;
+    padding: 1rem;
     color: #231F20;
 }
 
-ul .foot.social li image{
+/********  Font awesome hover effects on fa.js *********/
+.fab:hover {
+
+}
+
+ul .foot.social li image {
     text-decoration: none;
 
 
@@ -650,6 +694,7 @@ ul .foot.social li image{
     .footLeft, .footRight {
         display: none;
     }
+
     .footCtr {
         display: flex;
         margin: auto;
