@@ -11,28 +11,53 @@
 
 <body>
 <div class="wrapper">
-    <nav>
+
+    /*************** NAVIGATION ***************/
+
+    // Full desktop navbar
+    <nav class="desktop">
         <nav class="leftnav">
-            <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active" href="/index.html"> Essentialism</a>
+            <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active"
+                                                                                        href="https://friedmacaroni.netlify.com/index.html">
+            Essentialism</a>
         </nav>
         <nav class="rightnav">
             <a href="#" class="rightnav">Testimonials</a>
             <a href="#" class="rightnav">Pricing</a>
-            <a href="/about.html" class="rightnav">About</a>
-            <a href="#" class="rightnav">Sign Up</a>
+            <a href="https://friedmacaroni.netlify.com/about.html" class="rightnav">About</a>
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/signup1" class="rightnav">Sign Up</a>
         </nav>
     </nav>
 
+    // Shortened mobile nav
+    <nav class="mobile">
+        <nav class="leftnav">
+            <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active"
+                                                                                        href="https://unruffled-haibt-0c1f67.netlify.com/index.html">
+            Essentialism</a>
+        </nav>
+        <nav class="rightnav">
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/login" class="rightnav">Sign In</a>
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/signup1" class="rightnav">Sign Up</a>
+        </nav>
+    </nav>
+
+    /************** CALL TO ACTION (CTA) SECTION ***********/
     <section class="cta">
+        /****** Left Side *****/
         <article>
             <h1>Find your life meaning</h1>
             <h2>Focus on the Essentials</h2><br>
-            <div class="button">Find
-            your
-            values</div>
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/signup1">
+                <div class="button">Find
+                your
+                values</div>
+            </a>
             <img class="cta-img" src="img/undraw_contemplating_8t0x.svg">
         </article>
 
+
+        /************** CTA LOGIN FORM **********/
         <aside>
             <form>
                 <fieldset>
@@ -45,19 +70,19 @@
                         <label for="pass">Password</label><br>
                         <span><input type="text" name="password" id="pass"><i class="fas fa-eye"></i></span>
                         <a href="#"><p class="smaller">forgot your password?</p></a>
-
                     </div>
                     <br><br>
-                    <input class="form-btn" type="submit" value="Sign In">
+                    <input class="button form-btn" type="submit" value="Sign In">
                 </fieldset>
             </form>
         </aside>
     </section>
 
+    /*************** TABS COMPONENT ************/
 
     <section class="about-tabs">
-        <!-- TABS COMPONENT -->
         <div class="tabs">
+            // Tab Titles
             <div class="tabs-links">
                 <div class="tabs-link tabs-link-selected" data-tab="growth">Grow</div>
                 <div class="tabs-link" data-tab="organize">Organize</div>
@@ -67,7 +92,7 @@
                 <div class="tabs-link" data-tab="answers">Answers</div>
             </div>
 
-            <!-- TAB CONTENTS -->
+            // Tab Contents
             <div class="tabs-item tabs-item-selected" data-tab="growth">
                 <div class="tabs-item-description">
                     <img src="img/undraw_going_up_ttm5.png">
@@ -101,59 +126,66 @@
         </div>
     </section>
 
+    /************ TESTIMONIALS *********/
 
+    <div class="testimonials">
+        <div class="quote top-quote">
+            <img class="avatar" src="img/6by7k29n.png">
+            <p>Essentialism has been a game changer in my life. I was able to revive my relationships and still have
+                time for myself.</p>
+        </div>
+        <div class="quote bottom-quote">
+            <p>I was constantly stressed. I had too much on my plate. Essentialism showed me what things I didn't
+                need
+                to be doing. It's a life saver!</p>
+            <img class="avatar" src="img/p1agylup.png">
+        </div>
+    </div>
 
-        <div class="testimonials">
-            <div class="quote top-quote">
-                <img class="avatar" src="img/6by7k29n.png">
-                <p>Essentialism has been a game changer in my life. I was able to revive my relationships and still have
-                    time for myself.</p>
+    /**************** FEATURES BLOCKS ************/
+    <div class="features">
+        <div class="fblock">
+            <div class="block">
+                <img src="img/1.png" alt="Sample photo">
+                <p>Figure out what is really important to you. With the help of Essentialism, you can identify what is
+                    really important and base your life around it.</p>
             </div>
-            <div class="quote bottom-quote">
-                <p>I was constantly stressed. I had too much on my plate. Essentialism showed me what things I didn't
-                    need
-                    to be doing. It's a life saver!</p>
-                <img class="avatar" src="img/p1agylup.png">
+        </div>
+        <div class="fblock">
+            <div class="block">
+                <img src="img/2.png" alt="Sample photo">
+                <p>Discover a new way to organize your life. Stop being driven by the world around you and take the
+                    wheel.</p>
+            </div>
+        </div>
+        <div class="fblock">
+            <div class="block">
+                <img src="img/3.png" alt="Sample photo">
+                <p>Become the person you want to become by doing the things that you want to do. We will show you how to
+                    focus on what really matters.</p>
             </div>
         </div>
 
-        <div class="features">
-
-            <div class="fblock">
-                <div class="block">
-                    <img src="img/1.png" alt="Sample photo">
-                    <p>Figure out what is really important to you. With the help of Essentialism, you can identify what is really important and base your life around it.</p>
-                </div>
-            </div>
-            <div class="fblock">
-                <div class="block">
-                    <img src="img/2.png" alt="Sample photo">
-                    <p>Discover a new way to organize your life. Stop being driven by the world around you and take the wheel.</p>
-                </div>
-            </div>
-            <div class="fblock">
-                <div class="block">
-                    <img src="img/3.png" alt="Sample photo">
-                    <p>Become the person you want to become by doing the things that you want to do. We will show you how to focus on what really matters.</p>
-                </div>
-            </div>
-
-        </div>
+    </div>
     </section>
 
+    /**************** FOOTER **************/
     <footer>
-        <div class="footLeft">
+        <div class="foot footLeft">
             <p>Privacy Policy</p>
             <p>Terms and Conditions</p>
             <p>Cookie Policy</p>
         </div>
-        <div class="footCtr">
+        <div class="foot footCtr">
             <p>Find us on:</p>
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>
-            <i class="fab fa-twitter-square"></i>
+            <ul class="foot social">
+                <li><a href="#"><i class="fab fa-2x fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-2x fa-twitter-square" aria-hidden="true"></i></a></li>
+            </ul>
+            <p> Essentialism 2019. All rights reserved.</p>
         </div>
-        <div class="footRight">
+        <div class="foot footRight">
             <p>Contact Us</p>
             <p>FAQs</p>
             <p>About Us</p>
@@ -163,6 +195,8 @@
 
 
 </div>
+/*********** JAVASCRIPT ***********/
 <script src="js/tabs.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

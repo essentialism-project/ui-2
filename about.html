@@ -7,96 +7,128 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
-
 </head>
 <body>
 
 
 <div class="wrapper">
-    <nav>
+
+    /************ NAVIGATION ************/
+
+    // Full desktop navbar
+    <nav class="desktop">
         <nav class="leftnav">
-            <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active" href="/index.html"> Essentialism</a>
+            <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active"
+                                                                                        href="https://friedmacaroni.netlify.com/index.html">
+            Essentialism</a>
         </nav>
         <nav class="rightnav">
             <a href="#" class="rightnav">Testimonials</a>
             <a href="#" class="rightnav">Pricing</a>
-            <a href="/about.html" class="rightnav">About</a>
-            <a href="#" class="rightnav">Sign Up</a>
+            <a href="https://friedmacaroni.netlify.com/about.html" class="rightnav">About</a>
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/signup1" class="rightnav">Sign Up</a>
         </nav>
     </nav>
 
-    <div class="team">
-        <div class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Asha Franchi</h4>
-                <h6>UI Developer</h6>
-                <div class ="aboutBtn fab fa-github">  Asha</div>
-            </div>
-        </div>
-        <article class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Volha Hancharova</h4>
-                <h6>UI Developer</h6>
-                <div class ="aboutBtn fab fa-github">  Volha</div>
-            </div>
-        </article>
-        <article class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Arthur Leonard</h4>
-                <h6>Team Lead</h6>
-                <div class ="aboutBtn fab fa-github">  Arthur</div>
-            </div>
-        </article>
-        <article class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Colton Mortensen</h4>
-                <h6>UX Developer</h6>
-                <div class ="aboutBtn fab fa-github">  Colton</div>
-            </div>
-        </article>
-        <article class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Jack Ober</h4>
-                <h6>Frond End Developer</h6>
-                <div class ="aboutBtn fab fa-github">  Jack</div>
-            </div>
-        </article>
-        <div class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Ruben Ponce</h4>
-                <h6>Back End Developer</h6>
-                <div class ="aboutBtn fab fa-github">  Ruben</div>
-            </div>
-        </div>
-        <div class="member">
-            <img src="https://via.placeholder.com/300x200" alt="Sample photo">
-            <div class="text">
-                <h4>Lisa Taylor</h4>
-                <h6>UI Developer</h6>
-                <div class ="aboutBtn fab fa-github">  Lisa</div>
-            </div>
-        </div>
-    </div>
+    // Shortened mobile nav
+    <nav class="mobile">
+        <nav class="leftnav">
+            <img class="logo" src="img/Logo%20-%20Essentialism.png" alt="green logo"><a class="active"
+                                                                                        href="https://unruffled-haibt-0c1f67.netlify.com/index.html">
+            Essentialism</a>
+        </nav>
+        <nav class="rightnav">
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/login" class="rightnav">Sign In</a>
+            <a href="https://wizardly-swirles-43fdf7.netlify.com/signup1" class="rightnav">Sign Up</a>
+        </nav>
+    </nav>
 
+
+    /*********** Essentialism Team Section **********/
+
+    <section class='about'>
+        <div class="headline">
+            <h2>The Essentialism Team</h2>
+        </div>
+
+        <div class="team">
+
+            <article class="member">
+                <img src="img/Asha.png" alt="Asha Illustration">
+                <div class="text">
+                    <h4>Asha<br>Franchi</h4>
+                    <h6>UI Developer</h6>
+                    <a href="https://github.com/ashafranchi" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </article>
+            <article class="member">
+                <img src="img/Volha.png" alt="Volha Illustration">
+                <div class="text">
+                    <h4>Volha<br>Hancharova</h4>
+                    <h6>UI Developer</h6>
+                    <a href="https://github.com/daredtech" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </article>
+            <article class="member">
+                <img src="img/Arthur.png" alt="Arthur Illustration">
+                <div class="text">
+                    <h4>Arthur<br>Leonard</h4>
+                    <h6>Team Lead</h6>
+                    <a href="https://github.com/ArthurLeonard" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </article>
+            <article class="member">
+                <img src="img/Colton.png" alt="Colton Illustration">
+                <div class="text">
+                    <h4>Colton<br>Mortensen</h4>
+                    <h6>UX Developer</h6>
+                    <a href="https://github.com/RubenPonce" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </article>
+            <article class="member">
+                <img src="img/Jack.png" alt="Jack Illustration">
+                <div class="text">
+                    <h4>Jack<br>Ober</h4>
+                    <h6>Frond End Developer</h6>
+                    <a href="https://github.com/Jackcornellober" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </article>
+            <div class="member">
+                <img src="img/Ruben.png" alt="Ruben Illustration">
+                <div class="text">
+                    <h4>Ruben<br>Ponce</h4>
+                    <h6>Back End Developer</h6>
+                    <a href="https://github.com/RubenPonce" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </div>
+            <div class="member">
+                <img src="img/Lisa.png" alt="Lisa Illustration">
+                <div class="text">
+                    <h4>Lisa<br>Taylor</h4>
+                    <h6>UI Developer</h6>
+                    <a href="https://github.com/lisaMTayl" class="aboutBtn fab fa-lg fa-github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+/***************** Footer **************/
     <footer>
-        <div class="footLeft">
+        <div class="foot footLeft">
             <p>Privacy Policy</p>
             <p>Terms and Conditions</p>
             <p>Cookie Policy</p>
         </div>
-        <div class="footCtr">
+        <div class="foot footCtr">
             <p>Find us on:</p>
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>
-            <i class="fab fa-twitter-square"></i>
+            <ul class="foot social">
+                <li><a href="#"><i class="fab fa-2x fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-2x fa-twitter-square" aria-hidden="true"></i></a></li>
+            </ul>
+            <p> Essentialism 2019. All rights reserved.</p>
         </div>
-        <div class="footRight">
+        <div class="foot footRight">
             <p>Contact Us</p>
             <p>FAQs</p>
             <p>About Us</p>
@@ -104,8 +136,9 @@
 
     </footer>
 
-
 </div>
+
 <script src="js/tabs.js"></script>
+
 </body>
 </html>
